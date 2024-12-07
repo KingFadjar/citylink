@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "User Created Successfully";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>@TempData["SuccessMessage"]</p>
+
+<ul>
+    <li><strong>Name:</strong> @TempData["UserName"]</li>
+    <li><strong>Email:</strong> @TempData["UserEmail"]</li>
+</ul>
+
+<a href="/Applicants/Index">Kembali ke daftar pengguna</a>
